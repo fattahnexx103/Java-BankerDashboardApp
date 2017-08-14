@@ -50,7 +50,7 @@ public class SavingsAccount {
 		this.accountBalance = accountBalance;
 	}
 
-	public List<SavingsTransaction> getSavingsTransaction() {
+	public List<SavingsTransaction> getSavingsTransactionList() {
 		return savingsTransaction;
 	}
 
