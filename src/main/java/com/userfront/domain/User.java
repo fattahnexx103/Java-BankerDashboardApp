@@ -55,7 +55,7 @@ public class User implements UserDetails {
 	private List<Appointment> appointmentList;
 	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private List<Recipent> recipentList;
+	private List<Recipient> recipientList;
 	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JsonIgnore
@@ -105,7 +105,7 @@ public class User implements UserDetails {
 		return lastName;
 	}
 
-	public void setLastname(String lastname) {
+	public void setLastName(String lastname) {
 		this.lastName = lastname;
 	}
 
@@ -154,12 +154,12 @@ public class User implements UserDetails {
 		this.appointmentList = appointmentList;
 	}
 
-	public List<Recipent> getRecipentList() {
-		return recipentList;
+	public List<Recipient> getRecipientList() {
+		return recipientList;
 	}
 
-	public void setRecipentList(List<Recipent> recipentList) {
-		this.recipentList = recipentList;
+	public void setRecipientList(List<Recipient> recipientList) {
+		this.recipientList = recipientList;
 	}
 
 	@Override
